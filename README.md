@@ -25,7 +25,7 @@
 
 ## File Structure
 
-- `convert-json-to-excel.js`: The main script file containing the JSON-to-Excel conversion logic.
+- `script.js`: The main script file containing the JSON-to-Excel conversion logic.
 - `input.json`: Placeholder JSON file (replace it with your data).
 - `output_file.xlsx`: The generated Excel file.
 - `node_modules/`: Directory containing Node.js modules and dependencies.
