@@ -15,10 +15,14 @@ function traverseJson(jsonContent, sheets, prefix = '') {
     const sheetName = prefix + key;
 
     if (Array.isArray(sheetContent) && sheetContent.length > 0 && typeof sheetContent[0] === 'object') {
+      
       // Treat arrays of objects as separate sheets with hyperlink
       currentSheet[key] = `=HYPERLINK("#${sheetName}!A1", "SHEET::${sheetName}")`; // Hyperlink to the sheet
+      
       const newSheetName = sheetName; // Keep the current sheet name for arrays
+      
       sheets[newSheetName] = []; // Initialize sheet in sheets object
+      
       sheetContent.forEach((item, index) => {
         const newSheetNameIndex = `${newSheetName}_${index + 1}`;
         traverseJson(item, sheets, newSheetNameIndex + '_');
@@ -26,6 +30,7 @@ function traverseJson(jsonContent, sheets, prefix = '') {
         delete sheets[newSheetNameIndex];
       });
     } else if (typeof sheetContent === 'object') {
+      
       // Treat nested objects as separate sheets with hyperlink
       currentSheet[key] = `=HYPERLINK("#${sheetName}!A1", "SHEET::${sheetName}")`; // Hyperlink to the sheet
       traverseJson(sheetContent, sheets, sheetName + '_');
