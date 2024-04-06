@@ -1,0 +1,27 @@
+{
+    "components": [
+        {
+            "type": "header",
+            "content": "Company description (3-4 lines)"
+        },
+        {
+            "type": "text",
+            "content": "We are a motivated and experienced team of top performers who are committed to providing a mutually respectful work environment. At ABC (Company Name), we believe diversity and equal employment opportunities among our teammates are critical to our success as a global business."
+        },
+        {
+            "type": "header",
+            "content": "Node.js developer job description (4-5 lines)"
+        },
+        {
+            "type": "text",
+            "content": "We are an elite IT solutions company, looking for an experienced Node.js developer to join our DevOps team. An analytical problem solver with deep knowledge of Node.js and a passion for improvement and teamwork is the right candidate for the job role. The developer will also be in charge of creating the core computational logic of the website with reusable, clear, and versatile code."
+        },
+        {
+            "type": "button",
+            "content": "Get started",
+            "metadata": {
+                "class": "get-started-button"
+            }
+        }
+    ]
+}
