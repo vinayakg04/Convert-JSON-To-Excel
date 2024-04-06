@@ -1,6 +1,4 @@
-#Converting JSON To Excel 
-
-## Requirements
+## Converting JSON To Excel
 
 - Node.js installed on your machine
 - Input JSON file with the data to be converted
@@ -21,13 +19,13 @@
    node script.js
    ```
 
-4. The script will process the JSON data and create an Excel file (`output_file.xlsx`) in the same directory.
+4. The script will process the JSON data and create an Excel file (`assignment_output.xlsx`) in the same directory.
 
 ## File Structure
 
 - `script.js`: The main script file containing the JSON-to-Excel conversion logic.
 - `input.json`: Placeholder JSON file (replace it with your data).
-- `output_file.xlsx`: The generated Excel file.
+- `assignment_output.xlsx`: The generated Excel file.
 - `node_modules/`: Directory containing Node.js modules and dependencies.
 - `package.json` and `package-lock.json`: Node.js project configuration files.
 
